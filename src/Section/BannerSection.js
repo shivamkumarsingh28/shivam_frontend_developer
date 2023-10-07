@@ -2,15 +2,18 @@ import React, {useState, useEffect} from 'react'
 import LoadingState from '../Components/LoadingState'
 
 export default function BannerSection() {
+  // react hook to store api fetch data default null
     const [items, setItems] = useState(null)
 
+    // react useEffect use for fetch spacex data from spacex url
   useEffect(() => {
     const fetchItems = async () => {
       const res = await fetch(`https://api.spacexdata.com/v3/info`)
       const data = await res.json()
+      // set data in setItem
       setItems(data)
     }
-
+// function call 
     fetchItems()
   }, [])
 
@@ -24,9 +27,9 @@ export default function BannerSection() {
               aside from their website
             </span>
           </h1>
-
+{/* check item null or not if null fetch data that time show loading and then data store in item then show data in it  */}
           {!items ? (
-            <LoadingState />
+            <LoadingState /> // loading state components
           ) : (
             <>
               <div className="flex flex-col justify-center md:flex-row">

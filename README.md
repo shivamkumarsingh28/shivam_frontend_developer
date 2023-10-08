@@ -1,6 +1,9 @@
 
 # React SpaceX FrontEnd Project
 
+live- https://shivamkumarsingh28.github.io/shivam_frontend_developer/
+video- https://drive.google.com/file/d/1j5GmOogYTbmobOIXQktvCv4Xh66zhltd/view?usp=drive_link
+
 React is an open-source JavaScript library for building user interfaces, primarily focused on creating web applications with dynamic, interactive user interfaces. Developed and maintained by Facebook (now Meta), React has gained widespread popularity and is widely used in web development.
 ## Installation Process: 
 
